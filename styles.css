@@ -4,6 +4,10 @@ body{
     margin: auto;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*Mise en forme du header*/
 
 header{
@@ -58,6 +62,7 @@ nav li:nth-child(1){
 
 #teaser form{
     display: flex;
+    margin: 30px 0px;
 }
 
 .teaser:nth-child(1){
@@ -101,3 +106,65 @@ nav li:nth-child(1){
     font-weight: bold;
     font-size: 1.1em;
 }
+
+/*Mise en forme des filtres*/
+
+#filters{
+    display: flex;
+    height: 50px;
+    margin: 30px 0px;
+}
+
+#filters h2{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+    font-size: 1.1em;
+}
+
+.filter-label{
+    position: relative;
+    height: 50px;
+    padding: 0px 22px 0px 65px;
+    border: solid 2px #F2F2F2;
+    border-radius: 50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.filter-icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEEBFF;
+    border:2px solid #DEEBFF;
+    border-radius: 50px;
+    z-index: 1;
+    color:#0065FC;
+}
+
+.filter{
+    margin: 0px 12px;
+}
+
+.filter-icon:hover{
+    z-index:auto;
+}
+
+.filter-label:hover{
+    border:2px solid transparent;
+    box-shadow: 6px 6px 6px #DEEBFF;
+    z-index: 1;
+}
+
+
