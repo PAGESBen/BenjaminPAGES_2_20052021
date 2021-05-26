@@ -1,3 +1,103 @@
 body{
     font-family: 'Raleway', sans-serif;
+    max-width: 1440px;
+    margin: auto;
+}
+
+/*Mise en forme du header*/
+
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+
+.header svg, header li, header p{
+    padding: 30px 20px 0px 20px;
+}
+
+nav li{
+    margin:0px 10px 0px 0px;
+}
+
+nav li:nth-child(1){
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+#register{
+    text-decoration: none;
+    color: 0065FC;
+    font-weight: bold;
+}
+
+/*Mise en forme du titre*/
+
+#main_Title h1{
+    font-size: 1.4em;
+    margin-bottom: 10px ;
+}
+
+#main_Title p{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/*Mise en forme de la teaser*/
+
+#teaser form{
+    display: flex;
+}
+
+.teaser:nth-child(1){
+    width: 50px;
+    height: 50px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teaser:nth-child(2){
+    background-color: #F2F2F2 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teaser:nth-child(2) input{
+
+    width: 230px;
+    border: 1px #F2F2F2;
+    padding-left: 10px;
+    height: 95%;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.teaser:nth-child(3){
+    background-color: #0065FC;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.teaser:nth-child(3) input{
+    width: 135px;
+    height: 100%;
+    background: transparent;
+    border:0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
 }
