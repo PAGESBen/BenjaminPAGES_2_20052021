@@ -92,6 +92,13 @@ nav li:nth-child(1){
     font-weight: bold;
 }
 
+/*pour retirer la croix d'effacement de l'input type="search"*/
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 .teaser:nth-child(3){
     background-color: #0065FC;
     border-radius: 0px 10px 10px 0px;
