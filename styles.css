@@ -1,6 +1,6 @@
 body{
     font-family: 'Raleway', sans-serif;
-    max-width: 1440px;
+    width: 1340px;
     margin: auto;
 }
 
@@ -194,4 +194,94 @@ nav li:nth-child(1){
 
 #nb_results p{
     margin-left: 12px;
+}
+
+/*mise en forme div property*/
+
+#property{
+    display: flex;
+}
+
+#results_list{
+    width: 830px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 25px;
+}
+
+#best_results{
+    width: 420px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+/*mise en forme results_list*/
+
+#results_list h2{
+    margin-left: 15px;
+}
+
+#extended-list{
+    margin-left: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*articles*/
+
+#results{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result{
+    background-color: white;
+    border-radius: 20px;
+    width: 236px;
+    margin: 15px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 3px #F2F2F2;
+}
+
+.result img{
+    object-fit: cover;
+    width: 100%;
+    height: 114px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+#results h3, #results p, #results .property_rank{
+    margin: 5px 0px 0px 10px;
+}
+
+#results p{
+    font-size: 0.8em;
+}
+
+.best-rate{
+    font-weight: bold;
+}
+
+.devise{
+    font-weight: bold;
+}
+
+.property_rank{
+    display: flex;
+}
+
+.property_rank svg{
+    width: 10px;
+    margin: 1px;
+}
+
+#star-on{
+    color: #0065FC;
+}
+
+#star-off{
+    color: #F2F2F2;
 }
