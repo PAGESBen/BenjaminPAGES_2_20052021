@@ -9,6 +9,10 @@ a{
     text-decoration: none;
 }
 
+a:visited{
+    color: black;
+}
+
 /*Mise en forme du header*/
 
 header{
@@ -195,6 +199,7 @@ nav li:hover{
     border: 1px solid #DEEBFF;
     border-radius: 50px;
     color: #0065FC;
+    font-size: 12px;
 }
 
 #nb_results p{
@@ -283,10 +288,12 @@ nav li:hover{
     margin: 1px;
 }
 
-#star-on{
+.star-on{
     color: #0065FC;
+    font-size: 10px;
 }
 
-#star-off{
+.star-off{
     color: #F2F2F2;
+    font-size: 12px;
 }
