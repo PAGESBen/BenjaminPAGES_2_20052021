@@ -174,4 +174,24 @@ nav li:nth-child(1){
     z-index: 1;
 }
 
+/*mise en forme de la section nb_results*/
 
+#nb_results{
+    display: flex;
+    align-items: center;
+}
+
+.nb_results-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    width: 22px;
+    border: 1px solid #DEEBFF;
+    border-radius: 50px;
+    color: #0065FC;
+}
+
+#nb_results p{
+    margin-left: 12px;
+}
