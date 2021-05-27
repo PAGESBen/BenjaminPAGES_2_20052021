@@ -21,12 +21,12 @@
         
         <nav>
             <ul>
-                <li>Hébergements</li>
-                <li>Activités</li>
+                <li><a href="#nb_results">Hébergements</a></li>
+                <li><a href="#activities">Activités</a></li>
             </ul>
         </nav>
     
-        <p><a id="register" href="inscription.html" target="_blank">S'inscrire</a></p>
+        <p><a id="register" href="">S'inscrire</a></p>
     
     </header>
 
@@ -41,7 +41,7 @@
         
         <form>
             <!--ajout des attribus width et height au svg-->
-            <div class="teaser">               
+            <div class="teaser-icon">               
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt"
                     class="svg-inline--fa fa-map-marker-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 384 512" width=16 height=16>
@@ -50,10 +50,10 @@
                     </path>
                 </svg>
             </div>
-            <div class="teaser">
+            <div class="teaser-search">
                 <input type="search" value="Marseille, France" />
             </div>
-            <div class="teaser">
+            <div class="teaser-button">
                 <input type="submit" value="Rechercher">
             </div>
         </form>
@@ -62,7 +62,9 @@
 
     <section id="filters">
 
-        <h2>Filtres</h2>
+        <div id="filters-name">
+            <h2>Filtres</h2>
+        </div>
             
         <div class="filter">
             <a href="">
@@ -154,7 +156,7 @@
                 
                 <a href="">
                     <article class="result">
-                        <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière">
+                        <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière">
                         <h3><span class="property_name">Auberge la cannebière</span></h3>
                         <p>Nuit à partir de <strong class="best-rate">25</strong><span class="devise">€</span></p>
                         <div class="property_rank">
@@ -199,7 +201,7 @@
                 
                 <a href="">
                     <article class="result">
-                        <img src="/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                        <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
                         <h3><span class="property_name">Hôtel du port</span></h3>
                         <p>Nuit à partir de 52<span class="devise">€</span></p>
                         <div class="property_rank">
@@ -244,7 +246,7 @@
                 
                 <a href="">
                     <article class="result">
-                        <img src="/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
+                        <img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
                         <h3><span class="property_name">Hôtel les mouettes</span></h3>
                         <p>Nuit à partir de 76<span class="devise">€</span></p>
                         <div class="property_rank">
@@ -289,7 +291,7 @@
                 
                 <a href="">
                     <article class="result">
-                        <img src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                        <img src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                         <h3><span class="property_name">Hôtel de la mer</span></h3>
                         <p>Nuit à partir de 46<span class="devise">€</span></p>
                         <div class="property_rank">
@@ -334,7 +336,7 @@
                 
                 <a href="">
                     <article class="result">
-                        <img src="/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier">
+                        <img src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier">
                         <h3><span class="property_name">Auberge le Panier</span></h3>
                         <p>Nuit à partir de <strong class="best-rate">23</strong><span class="devise">€</span></p>
                         <div class="property_rank">
@@ -379,7 +381,7 @@
                 
                 <a href="">
                     <article class="result">
-                        <img src="/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez amina">
+                        <img src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez amina">
                         <h3><span class="property_name">Hôtel chez Amina</span></h3>
                         <p>Nuit à partir de 96<span class="devise">€</span></p>
                         <div class="property_rank">
@@ -438,7 +440,7 @@
 
             <article class="best_results">
                 <!--inserer une image-->
-                <span class="property_name">Hôtel Le soleil du matin</span>
+                <h3><span class="property_name">Hôtel Le soleil du matin</span></h3>
                 <p>Nuit à partir de 128<span class="devise">€</span></p>
                 <div class="property_rank">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18"
@@ -476,7 +478,7 @@
 
             <article class="best_results">
                 <!--inserer une image-->
-                <span class="property_name">Au coeur de l'eau Chambre d'hôtes</span>
+                <h3><span class="property_name">Au coeur de l'eau Chambre d'hôtes</span></h3>
                 <p>Nuit à partir de 71<span class="devise">€</span></p>
                 <div class="property_rank">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18"
@@ -514,7 +516,7 @@
 
             <article class="best_results">
                 <!--inserer une image-->
-                <span class="property_name">Hôtel tout bleu et Blanc</span>
+                <h3><span class="property_name">Hôtel tout bleu et Blanc</span></h3>
                 <p>Nuit à partir de 68<span class="devise">€</span></p>
                 <div class="property_rank">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18"

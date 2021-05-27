@@ -1,7 +1,8 @@
 body{
     font-family: 'Raleway', sans-serif;
-    width: 1340px;
+    max-width: 1340px;
     margin: auto;
+    padding: 0px 50px;
 }
 
 a{
@@ -35,7 +36,7 @@ nav li{
     margin:0px 10px 0px 0px;
 }
 
-nav li:nth-child(1){
+nav li:hover{
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
@@ -65,7 +66,7 @@ nav li:nth-child(1){
     margin: 30px 0px;
 }
 
-.teaser:nth-child(1){
+.teaser-icon{
     width: 50px;
     height: 50px;
     background-color: #F2F2F2;
@@ -75,14 +76,14 @@ nav li:nth-child(1){
     align-items: center;
 }
 
-.teaser:nth-child(2){
+.teaser-search{
     background-color: #F2F2F2 ;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.teaser:nth-child(2) input{
+.teaser-search input{
 
     width: 230px;
     border: 1px #F2F2F2;
@@ -99,12 +100,12 @@ nav li:nth-child(1){
   appearance: none;
 }
 
-.teaser:nth-child(3){
+.teaser-button{
     background-color: #0065FC;
     border-radius: 0px 10px 10px 0px;
 }
 
-.teaser:nth-child(3) input{
+.teaser-button input{
     width: 135px;
     height: 100%;
     background: transparent;
@@ -118,15 +119,19 @@ nav li:nth-child(1){
 
 #filters{
     display: flex;
-    height: 50px;
+    flex-wrap: wrap;
     margin: 30px 0px;
 }
+
+ #filters-name{
+    height: 50px;
+    margin: 3px 0px;
+ }
 
 #filters h2{
     margin: 0;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-right: 18px;
     font-size: 1.1em;
@@ -161,7 +166,7 @@ nav li:nth-child(1){
 }
 
 .filter{
-    margin: 0px 12px;
+    margin: 3px 12px;
 }
 
 .filter-icon:hover{
@@ -203,7 +208,7 @@ nav li:nth-child(1){
 }
 
 #results_list{
-    width: 830px;
+    flex: 2;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-right: 20px;
@@ -211,7 +216,7 @@ nav li:nth-child(1){
 }
 
 #best_results{
-    width: 420px;
+   flex: 1;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-left: 20px;
