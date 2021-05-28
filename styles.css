@@ -1,6 +1,6 @@
 body{
     font-family: 'Raleway', sans-serif;
-    max-width: 1340px;
+    max-width: 1430px;
     margin: auto;
     padding: 0px 50px;
 }
@@ -220,21 +220,22 @@ nav li:hover{
     padding: 25px;
 }
 
-#best_results{
+#best_results_list{
    flex: 1;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-left: 20px;
+    padding: 25px;
 }
 
 /*mise en forme results_list*/
 
 #results_list h2{
-    margin-left: 15px;
+    margin-left: 40px;
 }
 
 #extended-list{
-    margin-left: 15px;
+    margin-left: 40px;
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -244,6 +245,7 @@ nav li:hover{
 #results{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .result{
@@ -262,8 +264,7 @@ nav li:hover{
     border-radius: 15px 15px 0px 0px;
 }
 
-
-#results h3, #results p, #results .property_rank{
+.result h3, .result p, .result .property_rank{
     margin: 5px 0px 0px 10px;
 }
 
@@ -283,17 +284,62 @@ nav li:hover{
     display: flex;
 }
 
-.property_rank svg{
-    width: 10px;
-    margin: 1px;
-}
-
 .star-on{
     color: #0065FC;
-    font-size: 10px;
+    font-size: 12px;
+    margin : 5px 1px;
 }
 
 .star-off{
     color: #F2F2F2;
     font-size: 12px;
+    margin : 5px 1px;
 }
+
+/*aside*/
+
+#best_results-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#best_results-logo{
+    font-size: 1.3em;
+}
+
+#best_results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best_result {
+    background-color: white;
+    width: 333px;
+    height: 134px;
+    border-radius: 20px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 3px #f2f2f2;
+    display: flex;
+    margin: 15px;
+}
+
+.best_result img{
+    object-fit: cover;
+    width: 127px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.best_result-content{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.best_result h3, .best_result p, .best_result .best_property_rank{
+    margin: 5px 0px 0px 10px;
+}
+
