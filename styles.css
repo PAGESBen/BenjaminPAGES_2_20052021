@@ -412,3 +412,25 @@ nav li:hover{
    margin:0;
    width: 100%;
 }
+
+/*Mise en forme du Footer*/
+
+footer{
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+.footer{
+    margin: 50px;
+    width: 25%;
+}
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li{
+margin: 10px 0px;
+
+}
+
