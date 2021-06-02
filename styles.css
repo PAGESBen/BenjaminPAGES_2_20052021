@@ -119,6 +119,10 @@ nav li:focus {
     padding-right: 20px;
 }
 
+input[type="search"]:focus {
+	outline:none;
+}
+
 /*pour retirer la croix d'effacement de l'input type="search"*/
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
