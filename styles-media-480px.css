@@ -1,3 +1,7 @@
+body {
+    max-width: 440px;
+}
+
 /*header*/
 
 header {
@@ -45,6 +49,8 @@ nav li:hover {
 
 #teaser {
     margin: 30px 20px;
+    max-width: 355px;
+    min-width: 300px;
 }
 
 .teaser-button {
@@ -101,6 +107,10 @@ nav li:hover {
 
 #best_results_list a {
     width: 100%;
+}
+
+.best_result {
+    max-width: 100%;
 }
 
 /*activities*/

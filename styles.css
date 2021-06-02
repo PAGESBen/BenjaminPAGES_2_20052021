@@ -4,7 +4,7 @@ body {
     margin: auto;
 }
 
-a {
+a:link {
     text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ nav li {
 
 nav li:hover {
     border-top: 2px solid #0065FC;
-    color: #0065FC;
+    color: #0065FC ;
 }
 
 nav li:focus {
@@ -178,7 +178,7 @@ input[type="search"]:focus {
 .filter-label {
     position: relative;
     height: 50px;
-    padding: 0px 22px 0px 65px;
+    padding: 0px 15px 0px 60px;
     border: solid 2px #F2F2F2;
     border-radius: 50px ;
     display: flex;
@@ -204,7 +204,7 @@ input[type="search"]:focus {
 }
 
 .filter {
-    margin: 3px 12px;
+    margin: 3px 10px 3px 0px;
 }
 
 .filter-icon:hover {
@@ -256,10 +256,16 @@ input[type="search"]:focus {
 }
 
 #best_results_list {
-   flex: 1;
+    flex: 1;
+}
+
+.best_results_list {
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-left: 20px;
+    min-height: 600px;
+    position: sticky;
+    top: 0;
 }
 
 /*mise en forme results_list*/
@@ -285,7 +291,8 @@ input[type="search"]:focus {
 .result {
     background-color: white;
     border-radius: 20px;
-    max-width: 25%;
+    min-width: 224px;
+    max-width: 28%;
     margin: 15px;
     border: 5px solid white;
     box-shadow: 4px 4px 4px #f2f2f2;
@@ -456,6 +463,7 @@ input[type="search"]:focus {
    background-color: white;
    margin:0;
    width: 100%;
+   font-size: 0.9em;
 }
 
 /*Mise en forme du Footer*/
