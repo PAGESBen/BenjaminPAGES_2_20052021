@@ -1,10 +1,10 @@
-body{
+body {
     font-family: 'Raleway', sans-serif;
     max-width: 1440px;
     margin: auto;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -14,19 +14,19 @@ a:visited{
 
 /*Mise en forme du header*/
 
-header{
+header {
     display: flex;
     justify-content: flex-end;
     margin: 0px 50px ;
 }
 
-#logo{
+#logo {
     display: flex;
     align-items: center;
     flex: 1;
 }
 
-nav ul{
+nav ul {
     display: flex;
     list-style-type: none;
 }
@@ -36,72 +36,86 @@ nav ul{
     padding: 30px 20px 0px 20px;
 }
 
-nav li{
+nav li {
     margin:0px 10px 0px 0px;
 }
 
-nav li:hover{
+nav li:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
 
-#register{
+nav li:focus {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+#register {
     text-decoration: none;
-    color: 0065FC;
+    color: #0065FC;
     font-weight: bold;
 }
 
 /*Mise en forme du titre*/
 
-#main_Title{
+#main_Title {
     margin: 40px 50px;
 }
 
-#main_Title h1{
+#main_Title h1 {
     font-size: 1.4em;
     margin-bottom: 10px ;
 }
 
-#main_Title p{
+#main_Title p {
     margin-top: 0;
 }
 
 /*Mise en forme de la teaser*/
 
-#teaser{
+#teaser {
     margin: 30px 50px;
+    width: 420px;
 }
 
-#teaser form{
+#teaser form {
     display: flex;
-    margin: 30px 0px;
+    position: relative;
+    border-radius: 20px;
+    height: 50px;
 }
 
-.teaser-icon{
+.teaser-icon {
+    position: absolute;
     width: 50px;
     height: 50px;
     background-color: #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px 0px 0px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
-.teaser-search{
-    background-color: #F2F2F2 ;
+.teaser-search {
+    position : absolute;
+    left: 52px;
+    right: 30px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    height: 100%;
+    border: 2px solid #F2F2F2;
 }
 
-.teaser-search input{
+.teaser-search-input {
 
     width: 230px;
-    border: 1px #F2F2F2;
     padding-left: 10px;
     height: 95%;
     font-size: 1.1em;
     font-weight: bold;
+    border: none;
 }
 
 /*pour retirer la croix d'effacement de l'input type="search"*/
@@ -111,35 +125,43 @@ nav li:hover{
   appearance: none;
 }
 
-.teaser-button{
+.teaser-button {
     background-color: #0065FC;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 20px 20px 0px;
+    position : absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 54px;
+    border: none;
+    color: white;
 }
 
-.teaser-button input{
-    width: 135px;
+.teaser-button-text {
     height: 100%;
-    background: transparent;
-    border:0;
-    color: white;
     font-weight: bold;
     font-size: 1.1em;
+    margin: 20px;
+}
+
+.teaser-button-icon {
+    display: none !important;
 }
 
 /*Mise en forme des filtres*/
 
-#filters{
+#filters {
     display: flex;
     flex-wrap: wrap;
     margin: 30px 50px;
 }
 
- #filters-name{
+ #filters-name {
     height: 50px;
     margin: 3px 0px;
  }
 
-#filters h2{
+#filters h2 {
     margin: 0;
     height: 100%;
     display: flex;
@@ -148,7 +170,7 @@ nav li:hover{
     font-size: 1.1em;
 }
 
-.filter-label{
+.filter-label {
     position: relative;
     height: 50px;
     padding: 0px 22px 0px 65px;
@@ -162,7 +184,7 @@ nav li:hover{
     text-decoration: none;
 }
 
-.filter-icon{
+.filter-icon {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -176,15 +198,15 @@ nav li:hover{
     color:#0065FC;
 }
 
-.filter{
+.filter {
     margin: 3px 12px;
 }
 
-.filter-icon:hover{
+.filter-icon:hover {
     z-index:auto;
 }
 
-.filter-label:hover{
+.filter-label:hover {
     border:2px solid transparent;
     box-shadow: 6px 6px 6px #DEEBFF;
     z-index: 1;
@@ -192,13 +214,13 @@ nav li:hover{
 
 /*mise en forme de la section nb_results*/
 
-#nb_results{
+#nb_results {
     display: flex;
     align-items: center;
     margin: 30px 50px;
 }
 
-.nb_results-icon{
+.nb_results-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,25 +232,25 @@ nav li:hover{
     font-size: 12px;
 }
 
-#nb_results p{
+#nb_results p {
     margin-left: 12px;
 }
 
 /*mise en forme div property*/
 
-#property{
+#property {
     display: flex;
     margin: 30px 50px;
 }
 
-#results_list{
+#results_list {
     flex: 2;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-right: 20px;
 }
 
-#best_results_list{
+#best_results_list {
    flex: 1;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -237,11 +259,11 @@ nav li:hover{
 
 /*mise en forme results_list*/
 
-#results_list h2{
+#results_list h2 {
     margin-left: 40px;
 }
 
-#extended-list{
+#extended-list {
     margin-left: 40px;
     font-size: 1.2em;
     font-weight: bold;
@@ -249,22 +271,22 @@ nav li:hover{
 
 /*articles*/
 
-#results{
+#results {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.result{
+.result {
     background-color: white;
     border-radius: 20px;
-    width: 236px;
+    max-width: 25%;
     margin: 15px;
     border: 5px solid white;
     box-shadow: 0px 0px 6px #f2f2f279;
 }
 
-.result img{
+.result img {
     object-fit: cover;
     width: 100%;
     height: 114px;
@@ -275,29 +297,29 @@ nav li:hover{
     margin: 5px 0px 0px 10px;
 }
 
-#results p{
+#results p {
     font-size: 0.8em;
 }
 
-.best-rate{
+.best-rate {
     font-weight: bold;
 }
 
-.devise{
+.devise {
     font-weight: bold;
 }
 
-.property_rank{
+.property_rank {
     display: flex;
 }
 
-.star-on{
+.star-on {
     color: #0065FC;
     font-size: 12px;
     margin : 5px 1px;
 }
 
-.star-off{
+.star-off {
     color: #F2F2F2;
     font-size: 12px;
     margin : 5px 1px;
@@ -305,18 +327,18 @@ nav li:hover{
 
 /*aside*/
 
-#best_results-title{
+#best_results-title {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#best_results-logo{
+#best_results-logo {
     font-size: 1.3em;
 }
 
-#best_results{
+#best_results {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -324,7 +346,8 @@ nav li:hover{
 
 .best_result {
     background-color: white;
-    width: 333px;
+    max-width: 333px;
+    min-width: 300px;
     height: 134px;
     border-radius: 20px;
     border: 5px solid white;
@@ -333,39 +356,39 @@ nav li:hover{
     margin: 15px;
 }
 
-.best_result img{
+.best_result img {
     object-fit: cover;
     width: 127px;
     border-radius: 15px 0px 0px 15px;
 }
 
-.best_result-content{
+.best_result-content {
     margin-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.best_result h3, .best_result p, .best_result .best_property_rank{
+.best_result h3, .best_result p, .best_result .best_property_rank {
     margin: 5px 0px 0px 10px;
 }
 
 /*mise en forme section activities*/
 
-#activities_list{
+#activities_list {
     margin: 30px;
 }
 
-#activities_list h2{
+#activities_list h2 {
     margin: 20px;
     padding-top: 30px;
 }
 
-#activities{
+#activities {
     display: flex;
 }
 
-.activities_column{
+.activities_column {
    height: 495px;
    width: 25%;
    display: flex;
@@ -373,7 +396,7 @@ nav li:hover{
 
 }
 
-.activities{
+.activities {
    overflow: hidden;
    border-radius: 20px;
    margin:20px;
@@ -383,45 +406,45 @@ nav li:hover{
 }
 
 
-#port{
+#port {
     background-image: url(./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     background-size: cover;
     background-position: center;
 }
 
-#pomegues{
+#pomegues {
    flex: 2;
    background-image: url(./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
    background-size: cover;
    background-position: center ;
 }
 
-#frioul{
+#frioul {
    flex: 1;
    background-image: url(./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
    background-size: cover;
    background-position: center ;
 }
 
-#calanques{
+#calanques {
    background-image: url(./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
    background-size: cover;
    background-position: center ;
 }
 
-#damegarde{
+#damegarde {
    background-image: url(./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
    background-size: cover;
    background-position: center ;
 }
 
-#longchamp{
+#longchamp {
    background-image: url(./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
    background-size: cover;
    background-position: center;
 }
 
-.activities h3{
+.activities h3 {
    position: absolute;
    bottom: 0;
    padding: 15px;
@@ -432,22 +455,20 @@ nav li:hover{
 
 /*Mise en forme du Footer*/
 
-footer{
+footer {
     background-color: #f2f2f2;
     display: flex;
 }
 
-.footer{
+.footer {
     margin: 50px;
     width: 25%;
 }
-footer ul{
+footer ul {
     list-style-type: none;
     padding: 0;
 }
 
-footer ul li{
+footer ul li {
 margin: 10px 0px;
-
 }
-
