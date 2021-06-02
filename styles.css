@@ -75,7 +75,7 @@ nav li:focus {
 
 #teaser {
     margin: 30px 50px;
-    width: 420px;
+    max-width: 420px;
 }
 
 #teaser form {
@@ -116,6 +116,7 @@ nav li:focus {
     font-size: 1.1em;
     font-weight: bold;
     border: none;
+    padding-right: 20px;
 }
 
 /*pour retirer la croix d'effacement de l'input type="search"*/
@@ -283,7 +284,7 @@ nav li:focus {
     max-width: 25%;
     margin: 15px;
     border: 5px solid white;
-    box-shadow: 0px 0px 6px #f2f2f279;
+    box-shadow: 4px 4px 4px #f2f2f2;
 }
 
 .result img {
@@ -351,7 +352,7 @@ nav li:focus {
     height: 134px;
     border-radius: 20px;
     border: 5px solid white;
-    box-shadow: 0px 0px 3px #f2f2f2;
+    box-shadow: 4px 4px 4px #f2f2f2;
     display: flex;
     margin: 15px;
 }
