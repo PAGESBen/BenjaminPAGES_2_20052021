@@ -1,4 +1,5 @@
 body {
+    min-width: 350px;
     max-width: 440px;
 }
 
@@ -91,7 +92,7 @@ nav li:hover {
 
 #results_list {
     background-color: white;
-    border-radius: none;
+    border-radius: 0px;
     margin-right: 0;
 }
 
