@@ -4,7 +4,7 @@ body {
     margin: auto;
 }
 
-a:link {
+a {
     text-decoration: none;
 }
 
@@ -36,13 +36,14 @@ nav ul {
     padding: 30px 20px 0px 20px;
 }
 
-nav li {
-    margin:0px 10px 0px 0px;
+
+nav li a {
+    padding: 30px 10px 0px 10px;
 }
 
-nav li:hover {
+nav li a:hover {
     border-top: 2px solid #0065FC;
-    color: #0065FC ;
+    color: #0065FC;
 }
 
 nav li:focus {
