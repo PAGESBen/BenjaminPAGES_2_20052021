@@ -16,9 +16,15 @@ a:visited{
 
 header {
     display: flex;
+    justify-content: flex-end;
     margin: 0px 50px ;
 }
 
+#logo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
 
 nav ul {
     display: flex;
@@ -26,13 +32,14 @@ nav ul {
 }
 
 
-header li, header p{
-    padding: 30px 20px 0px 20px;
+header p{
+    padding: 30px;
 }
 
-
 nav li a {
-    padding: 30px 10px 0px 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 30px 25px; 
 }
 
 nav li a:hover {
