@@ -1,5 +1,4 @@
 body {
-    min-width: 350px;
     max-width: 440px;
 }
 
@@ -115,6 +114,10 @@ nav li a:hover {
 
 .best_result {
     max-width: 100%;
+}
+
+#extended-list {
+    padding-bottom: 0;
 }
 
 /*activities*/

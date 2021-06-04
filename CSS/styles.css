@@ -270,16 +270,18 @@ input[type="search"]:focus {
     top: 0;
 }
 
-/*mise en forme results_list*/
-
-#results_list h2 {
+#results-title {
+    padding-top: 20px;
     margin-left: 40px;
 }
+
+/*mise en forme results_list*/
 
 #extended-list {
     margin-left: 40px;
     font-size: 1.2em;
     font-weight: bold;
+    padding-bottom: 20px ;
 }
 
 /*articles*/
@@ -346,6 +348,7 @@ input[type="search"]:focus {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 20px;
 }
 
 #best_results-logo {
