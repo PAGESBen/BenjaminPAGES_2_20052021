@@ -16,15 +16,9 @@ a:visited{
 
 header {
     display: flex;
-    justify-content: flex-end;
     margin: 0px 50px ;
 }
 
-#logo {
-    display: flex;
-    align-items: center;
-    flex: 1;
-}
 
 nav ul {
     display: flex;
@@ -32,7 +26,7 @@ nav ul {
 }
 
 
-.header svg, header li, header p{
+header li, header p{
     padding: 30px 20px 0px 20px;
 }
 
@@ -420,39 +414,39 @@ input[type="search"]:focus {
 
 
 #port {
-    background-image: url(./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-image: url(.././images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #pomegues {
    flex: 2;
-   background-image: url(./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+   background-image: url(.././images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
    background-size: cover;
    background-position: center ;
 }
 
 #frioul {
    flex: 1;
-   background-image: url(./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+   background-image: url(.././images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
    background-size: cover;
    background-position: center ;
 }
 
 #calanques {
-   background-image: url(./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+   background-image: url(.././images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
    background-size: cover;
    background-position: center ;
 }
 
 #damegarde {
-   background-image: url(./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+   background-image: url(.././images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
    background-size: cover;
    background-position: center ;
 }
 
 #longchamp {
-   background-image: url(./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+   background-image: url(.././images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
    background-size: cover;
    background-position: center;
 }
