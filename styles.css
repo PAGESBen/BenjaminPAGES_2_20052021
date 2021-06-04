@@ -232,7 +232,7 @@ input[type="search"]:focus {
     align-items: center;
     height: 22px;
     width: 22px;
-    border: 1px solid #DEEBFF;
+    border: 1px solid #F2F2F2;
     border-radius: 50px;
     color: #0065FC;
     font-size: 12px;
