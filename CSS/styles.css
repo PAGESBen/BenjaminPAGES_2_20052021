@@ -6,6 +6,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 a:visited{
@@ -272,6 +273,7 @@ input[type="search"]:focus {
     min-height: 600px;
     position: sticky;
     top: 0;
+    padding-bottom: 20px;
 }
 
 #results-title {
@@ -297,6 +299,7 @@ input[type="search"]:focus {
 }
 
 .result {
+    box-sizing: border-box;
     background-color: white;
     border-radius: 20px;
     min-width: 224px;

@@ -24,7 +24,7 @@ header nav {
 
 #results_list {
     background-color: white;
-    border-radius: none;
+    border-radius: 0;
     margin-right: 0;
 }
 
