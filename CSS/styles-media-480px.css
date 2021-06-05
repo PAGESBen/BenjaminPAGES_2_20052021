@@ -130,28 +130,39 @@ nav li a:hover {
     flex-direction: column;
 }
 
-.activities_column {
-    height: auto;
-    width: 100%;
-    display: flex;
+#activities_column-1, #activities_column-2 {
     flex-direction: column;
- }
+}
 
  .activities {
     overflow: hidden;
     border-radius: 20px;
     margin:20px;
-    height: 190px;
-    position: relative;
     box-shadow: 4px 4px 4px #f2f2f2;
  }
 
- #pomegues {
+ #port img, #calanques img {
+    height: 200px;
+}
+
+#pomegues {
     flex: auto;
+}
+
+#pomegues img {
+    height: 200px;
 }
 
 #frioul {
     flex: auto;
+}
+
+#frioul img {
+    height: 200px;
+}
+
+#damegarde img, #longchamp img {
+    height: 200px;
 }
 
 /*Footer*/
@@ -161,6 +172,6 @@ footer {
 }
 
 .footer {
- width: 100%;
- margin: 0px 20px;
+ width: 80%;
+ margin: 0px 0px 0px 20px;
 }

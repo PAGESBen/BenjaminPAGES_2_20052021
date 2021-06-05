@@ -12,6 +12,10 @@ a:visited{
     color: black;
 }
 
+figure {
+    margin: 0;
+}
+
 /*Mise en forme du header*/
 
 header {
@@ -346,13 +350,18 @@ input[type="search"]:focus {
 #best_results-title {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-top: 20px;
 }
 
+#best_results-title h2 {
+    margin-left: 40px;
+}
+
 #best_results-logo {
     font-size: 1.3em;
+    margin: 20px;
 }
 
 #best_results {
@@ -405,13 +414,16 @@ input[type="search"]:focus {
     display: flex;
 }
 
-.activities_column {
-   height: 495px;
-   width: 25%;
-   display: flex;
-   flex-direction: column;
-
+#activities_column-1, #activities_column-2 {
+    display: flex;
+    flex: 1;
 }
+
+.activities_column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+ }
 
 .activities {
    overflow: hidden;
@@ -422,43 +434,34 @@ input[type="search"]:focus {
    box-shadow: 4px 4px 4px #f2f2f2;
 }
 
+.activities img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
 
-#port {
-    background-image: url(.././images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
+#port img, #calanques img {
+    height: 450px;
 }
 
 #pomegues {
-   flex: 2;
-   background-image: url(.././images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-   background-size: cover;
-   background-position: center ;
+    flex: 2;
+}
+
+#pomegues img {
+    height: 300px;
 }
 
 #frioul {
-   flex: 1;
-   background-image: url(.././images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-   background-size: cover;
-   background-position: center ;
+    flex: 1;
 }
 
-#calanques {
-   background-image: url(.././images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-   background-size: cover;
-   background-position: center ;
+#frioul img {
+    height: 125px;
 }
 
-#damegarde {
-   background-image: url(.././images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-   background-size: cover;
-   background-position: center ;
-}
-
-#longchamp {
-   background-image: url(.././images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
-   background-size: cover;
-   background-position: center;
+#damegarde img, #longchamp img {
+    height: 220px;
 }
 
 .activities h3 {
@@ -469,6 +472,7 @@ input[type="search"]:focus {
    margin:0;
    width: 100%;
    font-size: 0.9em;
+   box-sizing: border-box;
 }
 
 /*Mise en forme du Footer*/
