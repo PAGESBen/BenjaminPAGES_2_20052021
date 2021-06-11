@@ -22,7 +22,7 @@ figure {
 header {
     display: flex;
     justify-content: flex-end;
-    margin: 0px 50px ;
+    margin: 0 50px ;
 }
 
 #logo {
@@ -44,7 +44,8 @@ header p{
 nav li a {
     display: inline-block;
     box-sizing: border-box;
-    padding: 30px 25px; 
+    padding: 30px 25px;
+    border-top: 2px solid white;
 }
 
 nav li a:hover {
@@ -55,6 +56,10 @@ nav li a:hover {
 nav li:focus {
     border-top: 2px solid #0065FC;
     color: #0065FC;
+}
+
+.register {
+    border-top: 2px solid white;
 }
 
 #register {
@@ -98,7 +103,7 @@ nav li:focus {
     height: 50px;
     background-color: #F2F2F2;
     border: 2px solid #F2F2F2;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px 0 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,7 +144,7 @@ input[type="search"]:focus {
 
 .teaser-button {
     background-color: #0065FC;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0 20px 20px 0;
     position : absolute;
     right: 0;
     top: 0;
@@ -170,7 +175,7 @@ input[type="search"]:focus {
 
  #filters-name {
     height: 50px;
-    margin: 3px 0px;
+    margin: 3px 0;
  }
 
 #filters h2 {
@@ -185,7 +190,7 @@ input[type="search"]:focus {
 .filter-label {
     position: relative;
     height: 50px;
-    padding: 0px 15px 0px 60px;
+    padding: 0 15px 0 60px;
     border: solid 2px #F2F2F2;
     border-radius: 50px ;
     display: flex;
@@ -211,7 +216,7 @@ input[type="search"]:focus {
 }
 
 .filter {
-    margin: 3px 10px 3px 0px;
+    margin: 3px 10px 3px 0;
 }
 
 .filter-icon:hover {
@@ -317,7 +322,7 @@ input[type="search"]:focus {
 }
 
 .result h3, .result p, .result .property_rank{
-    margin: 5px 0px 0px 10px;
+    margin: 5px 0 0 10px;
 }
 
 #results p {
@@ -388,7 +393,7 @@ input[type="search"]:focus {
 .best_result img {
     object-fit: cover;
     width: 127px;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 0 0 15px;
 }
 
 .best_result-content {
@@ -399,7 +404,7 @@ input[type="search"]:focus {
 }
 
 .best_result h3, .best_result p, .best_result .best_property_rank {
-    margin: 5px 0px 0px 10px;
+    margin: 5px 0 0 10px;
 }
 
 /*mise en forme section activities*/
@@ -440,7 +445,7 @@ input[type="search"]:focus {
 .activities img {
     object-fit: cover;
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 0 0;
 }
 
 #port img, #calanques img {
@@ -495,5 +500,5 @@ footer ul {
 }
 
 footer ul li {
-margin: 10px 0px;
+    margin: 10px 0;
 }
