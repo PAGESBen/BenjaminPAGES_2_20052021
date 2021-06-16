@@ -192,6 +192,7 @@ nav li a:hover {
 
 footer {
     flex-direction: column;
+    margin-top: 30px;
 }
 
 .footer {
