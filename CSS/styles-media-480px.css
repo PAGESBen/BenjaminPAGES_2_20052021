@@ -115,6 +115,10 @@ nav li a:hover {
     max-width: 100%;
 }
 
+#best_results-title {
+    padding: 20px 0 0 0;
+}
+
 #best_results-title h2 {
     margin-left: 20px;
 }
