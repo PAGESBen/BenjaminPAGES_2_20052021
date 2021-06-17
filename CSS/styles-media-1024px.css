@@ -34,11 +34,11 @@ header p {
      background-color: #F2F2F2;
      border-radius: 0;
      margin-left: 0;
- }
+}
 
  .best_results_list {
      min-height: auto;
- }
+}
 
  #best_results {
     flex-direction: row;
@@ -62,7 +62,7 @@ header p {
 }
 
 footer {
-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .footer {

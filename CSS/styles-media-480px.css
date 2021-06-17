@@ -31,20 +31,22 @@ header li {
 }
 
 nav li a {
+    border-top: none;
     width: 100%;
     padding: 10px;
+    border-bottom: 3px solid #F2F2F2;
 }
 
 nav li a:hover {
     border-top: none;
-    border-bottom: 2px solid #0065FC;
+    border-bottom: 3px solid #0065FC;
     color: #0065FC;
 }
 
 /*title*/
 
 #main_Title {
-    margin: 30px;
+    margin: 10px 30px;
 }
 
 #main_Title p {
@@ -88,6 +90,10 @@ nav li a:hover {
     margin: 20px;
 }
 
+.nb_results-icon {
+    min-width: 22px;
+}
+
 /*Property DIV*/
 
 #property {
@@ -109,7 +115,7 @@ nav li a:hover {
      background-color: #F2F2F2;
      border-radius: 0;
      margin-left: 0;
- }
+}
 
 .result {
     max-width: 100%;
@@ -140,6 +146,7 @@ nav li a:hover {
 }
 
 #extended-list {
+    margin-left: 20px;
     padding-bottom: 0;
 }
 
@@ -162,7 +169,7 @@ nav li a:hover {
     border-radius: 20px;
     margin:20px;
     box-shadow: 4px 4px 4px #f2f2f2;
- }
+}
 
  #port img, #calanques img {
     height: 200px;
@@ -197,5 +204,5 @@ footer {
 
 .footer {
     width: 80%;
-    margin: 10px 20px;
+    margin: 0 20px;
 }
